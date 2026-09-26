@@ -18,7 +18,7 @@
 <section class="section"><h3 class="section-title"><small>02</small> Those GCT days</h3><div class="field"><label for="campusMemory">One GCT memory you still smile about *</label><textarea id="campusMemory" name="campusMemory" maxlength="2500" required placeholder="A classroom, a canteen table, a festival, a rainy walk…"></textarea></div><div class="field"><label for="people">A classmate, teacher, or mentor who made a difference <span class="optional">(optional)</span></label><textarea id="people" name="people" maxlength="1800" placeholder="Tell us what they taught you, inside or outside class."></textarea></div><div class="field"><label for="campusLife">The little details you wish you could revisit <span class="optional">(optional)</span></label><textarea id="campusLife" name="campusLife" maxlength="1800" placeholder="Hostel life, favorite haunts, rituals, and inside jokes."></textarea></div></section>
 <section class="section"><h3 class="section-title"><small>03</small> The journey since</h3><div class="field"><label for="journey">Where did the journey take you? *</label><textarea id="journey" name="journey" maxlength="2500" required placeholder="Career, family, passion projects, unexpected turns—share what matters to you."></textarea></div><div class="field"><label for="turningPoint">A turning point, challenge, or lesson you carry <span class="optional">(optional)</span></label><textarea id="turningPoint" name="turningPoint" maxlength="1800" placeholder="The part that doesn't usually fit on a résumé."></textarea></div><div class="field"><label for="advice">A message for today's GCT students *</label><textarea id="advice" name="advice" maxlength="1800" required placeholder="What do you wish someone had told you when you were there?"></textarea></div><div class="field"><label for="classmates">A note to our classmates <span class="optional">(optional)</span></label><textarea id="classmates" name="classmates" maxlength="1500" placeholder="A greeting, a thank you, or an invitation to reconnect."></textarea></div></section>
 <section class="section"><h3 class="section-title"><small>04</small> Then & now</h3><p class="hint">Add a current portrait and, if you have one, a photo from your GCT days. Clear, well-lit photos look best in print. JPG, PNG, or WebP; up to 6 MB each. Images are resized to a maximum of 2200 pixels for reliable upload.</p><div class="photo-grid"><div class="photo-card"><label for="nowPhoto">Your photo today *</label><div class="photo-preview" id="nowPreview">Your current portrait</div><input id="nowPhoto" type="file" accept="image/jpeg,image/png,image/webp"><div class="photo-actions"><button class="mini" type="button" data-camera="now">Use camera</button><button class="mini" type="button" data-clear="now">Remove</button></div></div><div class="photo-card"><label for="thenPhoto">A photo from back then <span class="optional">(optional)</span></label><div class="photo-preview" id="thenPreview">A glimpse of campus days</div><input id="thenPhoto" type="file" accept="image/jpeg,image/png,image/webp"><div class="photo-actions"><button class="mini" type="button" data-camera="then">Use camera</button><button class="mini" type="button" data-clear="then">Remove</button></div></div></div><p class="photo-note">If direct camera access is unavailable, tap the photo chooser; many phones offer “Take Photo.”</p></section>
-<section class="section"><h3 class="section-title"><small>05</small> Stay in touch & permission</h3><div class="grid"><div class="field"><label for="email">Email for the editors <span class="optional">(not printed)</span></label><input id="email" name="email" type="email" autocomplete="email" maxlength="160" placeholder="you@example.com"></div><div class="field"><label for="invitationCode">Classmate invitation code *</label><input id="invitationCode" name="invitationCode" type="text" maxlength="80" required autocomplete="off" placeholder="Provided by the yearbook team"></div></div><div class="consent"><input id="consent" type="checkbox" required><label for="consent">I give the GCT alumni yearbook team permission to review, edit for clarity, and publish my submitted words and photos in the printed yearbook and related alumni previews. I confirm I have the right to share the photos. *</label></div><div class="consent"><input id="contactConsent" type="checkbox"><label for="contactConsent">The editors may contact me about this submission or the alumni initiative. My email will not be printed.</label></div></section><div class="actions"><button type="submit" class="button" id="submitBtn">Send my chapter ↗</button><button type="button" class="button secondary" id="previewBtn">Preview book page ↗</button><span id="status" class="status" role="status" aria-live="polite">Fields marked * are required.</span></div></form><section id="success" class="success" aria-live="polite"><div class="check">✓</div><span class="eyebrow">Your story is in</span><h2>Thank you for adding your chapter.</h2><p>The yearbook team has received your submission. Keep that old photo album close—we may reach out if we need a detail.</p><p id="receipt"></p></section></div></main>
+<section class="section"><h3 class="section-title"><small>05</small> Stay in touch & permission</h3><div class="grid"><div class="field"><label for="email">Email for the editors <span class="optional">(not printed)</span></label><input id="email" name="email" type="email" autocomplete="email" maxlength="160" placeholder="you@example.com"></div><div class="field"><label for="invitationCode">Classmate invitation code *</label><input id="invitationCode" name="invitationCode" type="text" maxlength="80" required autocomplete="off" placeholder="Provided by the yearbook team"></div></div><div class="consent"><input id="consent" type="checkbox" required><label for="consent">I give the GCT alumni yearbook team permission to review, edit for clarity, and publish my submitted words and photos in the printed yearbook and related alumni previews. I confirm I have the right to share the photos. *</label></div><div class="consent"><input id="contactConsent" type="checkbox"><label for="contactConsent">The editors may contact me about this submission or the alumni initiative. My email will not be printed.</label></div></section><div class="actions"><button type="submit" class="button" id="submitBtn">Send my chapter ↗</button><button type="button" class="button secondary" id="previewBtn">Preview book page ↗</button><span id="status" class="status" role="status" aria-live="polite">Fields marked * are required.</span></div></form><section id="success" class="success" aria-live="polite"><div class="check">✓</div><span class="eyebrow">Your story is in</span><h2>Thank you for adding your chapter.</h2><p>The yearbook team has received your story, photos and one-page memoir PDF. Keep that old photo album close—we may reach out if we need a detail.</p><p id="receipt"></p></section></div></main>
 <footer><div class="shell footer-row"><span>GCT Alumni Yearbook · Government College of Technology, Coimbatore</span><span>Then together. Still connected.</span></div></footer>
 <dialog id="cameraDialog"><strong>Capture a photo</strong><p class="photo-note">Allow camera access when your browser asks. Use the rear camera for an old printed photo.</p><video id="cameraVideo" autoplay playsinline muted></video><div class="camera-actions"><button class="mini" type="button" id="closeCamera">Cancel</button><button class="button" type="button" id="snapCamera">Capture</button></div></dialog>
 <dialog id="memoirDialog" aria-label="Yearbook book-page preview"><div class="memoir-toolbar"><strong>Book-page preview</strong><span id="memoirStatus" role="status">Preparing your story…</span><button class="mini" id="downloadMemoir" type="button" disabled>Save designed HTML</button><button class="mini" id="printMemoir" type="button" disabled>Print / Save as PDF</button><button class="mini" id="closeMemoir" type="button">Close</button></div><iframe id="memoirFrame" title="Your memoir page" sandbox="allow-same-origin allow-modals"></iframe></dialog>
@@ -58,8 +58,105 @@
   };
   $('downloadMemoir').onclick=()=>{if(!memoirHTML)return;const blob=new Blob([memoirHTML],{type:'text/html;charset=utf-8'}),url=URL.createObjectURL(blob),a=document.createElement('a'),name=$('name').value.trim().replace(/[^a-zA-Z0-9_-]+/g,'-').slice(0,55)||'alumnus';a.href=url;a.download='GCT-Memoir-'+name+'.html';document.body.append(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),60000)};
   $('printMemoir').onclick=()=>{if(memoirHTML)$('memoirFrame').contentWindow.print()};
+  // Creates one image-based PDF page, at A4 width and a height that fits every answer.
+  // Its content is generated locally; the PDF travels with the photos in the same submission.
+  async function buildMemoirPDF(values,now,then){
+    const W=1200, measure=document.createElement('canvas').getContext('2d'),ops=[];
+    const green='#193b30',cream='#fffcf6',gold='#b08a58',ink='#203c34',subtle='#587066';
+    let y=0;
+    const rect=(x,top,w,h,color)=>ops.push({kind:'rect',x,y:top,w,h,color});
+    const line=(x,top,w,color)=>rect(x,top,w,2,color);
+    const write=(value,x,baseline,font,color)=>ops.push({kind:'text',value:String(value),x,y:baseline,font,color});
+    function wrap(value,font,width){
+      measure.font=font;const output=[];
+      for(const para of String(value||'').replace(/\r\n?/g,'\n').split('\n')){
+        if(!para.trim()){output.push('');continue}
+        let current='';
+        for(const word of para.trim().split(/\s+/)){
+          const candidate=current?current+' '+word:word;
+          if(measure.measureText(candidate).width<=width){current=candidate;continue}
+          if(current){output.push(current);current=''}
+          let part='';
+          for(const ch of Array.from(word)){
+            if(part&&measure.measureText(part+ch).width>width){output.push(part);part=''}
+            part+=ch;
+          }
+          current=part;
+        }
+        output.push(current);
+      }
+      return output;
+    }
+    function block(value,x,width,font,color,height){for(const row of wrap(value,font,width)){if(row)write(row,x,y,font,color);y+=height}}
+    rect(0,0,W,115,cream);write('GCT   /   WHERE THE YEARS BEGAN',80,70,'bold 19px Arial',green);write('ALUMNI MEMOIR · COIMBATORE',845,70,'bold 15px Arial',gold);
+    rect(0,115,W,470,green);write('THEN, NOW & THE YEARS BETWEEN',80,180,'bold 17px Arial','#d4b785');
+    y=255;block(values.name||'Your name',80,730,values.name&&values.name.length>38?'42px Georgia':'64px Georgia',cream,values.name&&values.name.length>38?53:75);
+    if(values.knownAs){y+=10;block('Known to friends as '+values.knownAs,80,700,'italic 24px Georgia','#e8d8b9',35)}
+    y=Math.max(y+30,465);
+    const meta=[values.branch,values.graduationYear&&'Class of '+values.graduationYear,values.rollNumber&&'Roll no. '+values.rollNumber,values.homeTown].filter(Boolean).join('  ·  ');
+    block(meta,80,690,'21px Arial','#e9e8dd',29);
+    ops.push({kind:'photo',photo:now,x:850,y:154,w:270,h:390});
+    rect(850,520,270,24,cream);write('THE PRESENT DAY',863,538,'bold 13px Arial',green);
+    y=645;line(80,y,1040,gold);y+=64;
+    function chapter(title,fields){
+      write('GCT  /  '+title.toUpperCase(),80,y,'bold 17px Arial',gold);y+=55;
+      for(const [label,value] of fields){if(!String(value||'').trim())continue;
+        write(label.toUpperCase(),80,y,'bold 15px Arial',gold);y+=35;
+        block(value,80,1040,'25px Georgia',ink,38);y+=30;
+      }
+      y+=4;line(80,y,1040,'#ddd2bf');y+=64;
+    }
+    chapter('Those GCT days',[['A memory I still smile about',values.campusMemory],['The people who shaped me',values.people],['The little details I miss',values.campusLife]]);
+    if(then){
+      rect(80,y-32,1040,260,'#f0e9db');ops.push({kind:'photo',photo:then,x:100,y:y-12,w:250,h:220});
+      write('FROM THE ARCHIVE',390,y+60,'bold 16px Arial',gold);
+      write('Back in the day',390,y+112,'34px Georgia',ink);
+      write('A glimpse of the years we shared at GCT.',390,y+165,'italic 22px Georgia',subtle);
+      y+=290;
+    }
+    chapter('The journey since',[['Where life took me',values.journey],['A turning point or lesson',values.turningPoint]]);
+    chapter('For the next generation',[["To today's GCT students",values.advice],['To my classmates',values.classmates]]);
+    const H=Math.ceil(y+100);if(H>12500)throw Error('The story exceeds the one-page PDF limit. Shorten an answer and try again.');
+    const canvas=document.createElement('canvas');canvas.width=W;canvas.height=H;
+    const ctx=canvas.getContext('2d');if(!ctx)throw Error('This browser cannot make the memoir PDF.');
+    ctx.fillStyle=cream;ctx.fillRect(0,0,W,H);
+    const load=async photo=>{if(!photo)return null;const img=new Image();img.src='data:image/jpeg;base64,'+photo.base64;await img.decode();return img};
+    const [nowImage,thenImage]=await Promise.all([load(now),load(then)]);
+    for(const op of ops){
+      if(op.kind==='rect'){ctx.fillStyle=op.color;ctx.fillRect(op.x,op.y,op.w,op.h)}
+      else if(op.kind==='text'){ctx.fillStyle=op.color;ctx.font=op.font;ctx.fillText(op.value,op.x,op.y)}
+      else if(op.kind==='photo'){const img=op.photo===now?nowImage:thenImage;if(!img)continue;
+        const scale=Math.max(op.w/img.width,op.h/img.height),sourceW=op.w/scale,sourceH=op.h/scale;
+        ctx.drawImage(img,(img.width-sourceW)/2,(img.height-sourceH)/2,sourceW,sourceH,op.x,op.y,op.w,op.h);
+      }
+    }
+    ctx.fillStyle=green;ctx.fillRect(0,H-78,W,78);
+    ctx.fillStyle=cream;ctx.font='16px Arial';ctx.fillText('GOVERNMENT COLLEGE OF TECHNOLOGY · COIMBATORE',80,H-31);
+    ctx.fillStyle='#d4b785';ctx.fillText('THEN TOGETHER. STILL CONNECTED.',858,H-31);
+    const jpeg=await new Promise((resolve,reject)=>canvas.toBlob(b=>b?resolve(b):reject(Error('Could not render the memoir PDF.')),'image/jpeg',.83));
+    if(jpeg.size>6*1024*1024)throw Error('The memoir PDF is too large. Please choose a smaller photo.');
+    const pdf=singlePagePDF_(new Uint8Array(await jpeg.arrayBuffer()),W,H);
+    const base64=await new Promise((resolve,reject)=>{const reader=new FileReader();reader.onload=()=>resolve(String(reader.result).split(',')[1]);reader.onerror=()=>reject(Error('Could not read the memoir PDF.'));reader.readAsDataURL(new Blob([pdf],{type:'application/pdf'}))});
+    return {mime:'application/pdf',base64};
+  }
+  function singlePagePDF_(jpeg,width,height){
+    const enc=new TextEncoder(),parts=[],offsets=[0];let total=0;
+    const add=part=>{const bytes=typeof part==='string'?enc.encode(part):part;parts.push(bytes);total+=bytes.length};
+    const object=(id,body)=>{offsets[id]=total;add(id+' 0 obj\n');add(body);add('\nendobj\n')};
+    const pageWidth=595,pageHeight=(height/width*pageWidth).toFixed(2);
+    add('%PDF-1.4\n%memoir\n');
+    object(1,'<< /Type /Catalog /Pages 2 0 R >>');
+    object(2,'<< /Type /Pages /Kids [3 0 R] /Count 1 >>');
+    object(3,`<< /Type /Page /Parent 2 0 R /MediaBox [0 0 ${pageWidth} ${pageHeight}] /Resources << /XObject << /Im0 4 0 R >> >> /Contents 5 0 R >>`);
+    offsets[4]=total;add(`4 0 obj\n<< /Type /XObject /Subtype /Image /Width ${width} /Height ${height} /ColorSpace /DeviceRGB /BitsPerComponent 8 /Filter /DCTDecode /Length ${jpeg.length} >>\nstream\n`);add(jpeg);add('\nendstream\nendobj\n');
+    const stream=`q\n${pageWidth} 0 0 ${pageHeight} 0 0 cm\n/Im0 Do\nQ\n`;
+    object(5,`<< /Length ${enc.encode(stream).length} >>\nstream\n${stream}endstream`);
+    const xref=total;add('xref\n0 6\n0000000000 65535 f \n');for(let n=1;n<=5;n++)add(String(offsets[n]).padStart(10,'0')+' 00000 n \n');
+    add(`trailer\n<< /Size 6 /Root 1 0 R >>\nstartxref\n${xref}\n%%EOF`);
+    const result=new Uint8Array(total);let position=0;for(const part of parts){result.set(part,position);position+=part.length}return result;
+  }
   function finish(message,error){clearTimeout(timeoutId);activeRequest=null;$('submitBtn').disabled=false;status(message,error)}
   window.addEventListener('message',e=>{if(!/^(https:\/\/([a-z0-9-]+\.)?(googleusercontent\.com|google\.com))$/.test(e.origin))return;const d=e.data;if(!d||d.source!=='gct-yearbook'||d.requestId!==activeRequest)return;if(d.ok){clearTimeout(timeoutId);$('yearbookForm').style.display='none';$('success').style.display='block';$('receipt').textContent='Receipt: '+d.requestId;$('success').scrollIntoView({behavior:'smooth'})}else finish(d.message||'The submission could not be saved. Please try again.',true)});
-  $('yearbookForm').addEventListener('submit',async e=>{e.preventDefault();const f=e.currentTarget;if(!f.reportValidity())return;if(!photoFiles.now){status('Please add a current photo.',true);$('nowPhoto').focus();return}if(!/^https:\/\/script\.google\.com\/macros\/s\/[^/]+\/exec$/.test(SCRIPT_URL)){status('The yearbook editor needs to connect this form to Google Drive first.',true);return}if(activeRequest)return;const requestId=(crypto.randomUUID?crypto.randomUUID():Date.now()+'-'+Math.random().toString(36).slice(2));activeRequest=requestId;$('submitBtn').disabled=true;status('Preparing photos and sending your story…');try{const values=Object.fromEntries(new FormData(f).entries());const payload={requestId,...values,consent:$('consent').checked,contactConsent:$('contactConsent').checked,nowPhoto:await encodePhoto(photoFiles.now),thenPhoto:await encodePhoto(photoFiles.then)};const transport=document.createElement('form');transport.action=SCRIPT_URL;transport.method='POST';transport.target='yearbookTransport';transport.style.display='none';const hidden=document.createElement('textarea');hidden.name='payload';hidden.value=JSON.stringify(payload);transport.append(hidden);document.body.append(transport);transport.submit();transport.remove();timeoutId=setTimeout(()=>finish('We could not confirm delivery. Please ask the editor to check your receipt before sending again: '+requestId,true),60000)}catch(err){finish(err.message||'Could not prepare your photos. Please try again.',true)}});
+  $('yearbookForm').addEventListener('submit',async e=>{e.preventDefault();const f=e.currentTarget;if(!f.reportValidity())return;if(!photoFiles.now){status('Please add a current photo.',true);$('nowPhoto').focus();return}if(!/^https:\/\/script\.google\.com\/macros\/s\/[^/]+\/exec$/.test(SCRIPT_URL)){status('The yearbook editor needs to connect this form to Google Drive first.',true);return}if(activeRequest)return;const requestId=(crypto.randomUUID?crypto.randomUUID():Date.now()+'-'+Math.random().toString(36).slice(2));activeRequest=requestId;$('submitBtn').disabled=true;status('Preparing photos and sending your story…');try{const values=Object.fromEntries(new FormData(f).entries());const [nowPhoto,thenPhoto]=await Promise.all([encodePhoto(photoFiles.now),encodePhoto(photoFiles.then)]);status('Creating your memoir PDF…');const memoirPdf=await buildMemoirPDF(values,nowPhoto,thenPhoto);status('Sending your story, photos and memoir PDF…');const payload={requestId,...values,consent:$('consent').checked,contactConsent:$('contactConsent').checked,nowPhoto,thenPhoto,memoirPdf};const transport=document.createElement('form');transport.action=SCRIPT_URL;transport.method='POST';transport.target='yearbookTransport';transport.style.display='none';const hidden=document.createElement('textarea');hidden.name='payload';hidden.value=JSON.stringify(payload);transport.append(hidden);document.body.append(transport);transport.submit();transport.remove();timeoutId=setTimeout(()=>finish('We could not confirm delivery. Please ask the editor to check your receipt before sending again: '+requestId,true),120000)}catch(err){finish(err.message||'Could not prepare your photos. Please try again.',true)}});
 </script>
 </body></html>
